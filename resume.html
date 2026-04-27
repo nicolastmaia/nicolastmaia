@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.jpg" />
+  <title>Nícolas T. Maia — Curriculum as Code</title>
+  <meta name="description" content="Curriculum as Code — structured resume for Nícolas T. Maia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="resume.css" />
+</head>
+
+<body>
+  <main class="cv-container" id="top">
+    <div class="cv-top">
+      <div class="cv-top__left">
+        <span class="cv-badge">Curriculum as Code</span>
+        <p class="cv-title">resume.yml → rendered</p>
+      </div>
+      <div class="cv-actions">
+        <a class="cv-btn" href="index.html">Back</a>
+        <a class="cv-btn cv-btn--accent" href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+      </div>
+    </div>
+
+    <section class="cv-hero" aria-labelledby="cv-name">
+      <div>
+        <h1 class="cv-name" id="cv-name">Nícolas Terra Maia</h1>
+        <p class="cv-role">Software Engineer · Brazil · <span id="xp-years">5+</span> years</p>
+        <p class="cv-summary">
+          Software Engineer since 2021 with a Bachelor's in Information Systems by UFRRJ. Skilled in a diverse range of
+          technologies including C#, NodeJS, ReactJS, React Native, Typescript, Docker, Ansible, and Elastic Stack.
+        </p>
+      </div>
+
+      <aside class="cv-card" aria-label="Contact">
+        <div class="cv-card__title">
+          <span>Contact</span>
+          <span style="color: var(--accent); font-weight: 700;">available</span>
+        </div>
+        <div class="cv-card__body">
+          <dl class="cv-kv">
+            <dt>email</dt>
+            <dd><a href="mailto:nicolasterramaia@gmail.com">nicolasterramaia@gmail.com</a></dd>
+            <dt>phone</dt>
+            <dd><a href="tel:+5521995767816">+55 21 99576-7816</a></dd>
+            <dt>location</dt>
+            <dd>Rio de Janeiro, RJ · Brazil</dd>
+            <dt>links</dt>
+            <dd>
+              <a href="https://github.com/nicolastmaia" target="_blank" rel="noopener noreferrer">github.com/nicolastmaia</a>
+            </dd>
+            <dt></dt>
+            <dd>
+              <a href="https://www.linkedin.com/in/nicolastmaia/" target="_blank" rel="noopener noreferrer">linkedin.com/in/nicolastmaia</a>
+            </dd>
+            <dt></dt>
+            <dd>
+              <a href="https://linktr.ee/nicolastmaia" target="_blank" rel="noopener noreferrer">linktr.ee/nicolastmaia</a>
+            </dd>
+          </dl>
+        </div>
+      </aside>
+    </section>
+
+    <div class="cv-sections">
+      <section class="cv-section" aria-labelledby="work-experience">
+        <header class="cv-section__header">
+          <h2 class="cv-section__title" id="work-experience">Work Experience</h2>
+          <p class="cv-section__hint">impact over tasks</p>
+        </header>
+        <div class="cv-section__body">
+          <article class="cv-item">
+            <div class="cv-item__top">
+              <h3 class="cv-item__role">Senior Software Engineer · Stage Consulting</h3>
+              <p class="cv-item__meta">Jun 2024 → present</p>
+            </div>
+            <ul class="cv-bullets">
+              <li>Coordination and development of applications in ReactJS to interact with blockchain including a platform, a browser extension and a telegram game.</li>
+              <li>Development of a telegram game in NextJs for a blockchain project that doubled community engagement and brought more value to the project.</li>
+              <li>Developed a telegram bot to monitor blockchain availability and functionalities, generating value to stakeholders and project owners.</li>
+              <li>Development and maintenance of a Web3 platform to manage cryptocurrencies.</li>
+              <li>Integration of KYC tool for a banking app using React Native and NodeJS. Saved more than R$350 thousand for the client company and allowed better management feature.</li>
+            </ul>
+          </article>
+
+          <article class="cv-item">
+            <div class="cv-item__top">
+              <h3 class="cv-item__role">Developer Analyst · Neopath Integrated Systems LTDA</h3>
+              <p class="cv-item__meta">Jun 2021 → Jun 2024</p>
+            </div>
+            <ul class="cv-bullets">
+              <li>Development of an ETL solution using NodeJS, optimizing ticket transformation and reducing maintenance time and costs.</li>
+              <li>Engineered a real-time WebRTC ecosystem featuring a React Native mobile client and a C# backend server to facilitate seamless integration with existing desktop infrastructure.</li>
+              <li>Created a Python REST API for OpenAI's Whisper tool (open source) to transcript audio, saving the company substantial costs compared to the previous solution.</li>
+              <li>Continuously enhanced ASP.NET applications, ensuring a user-friendly interface and streamlined configuration processes.</li>
+              <li>Used Docker, Elasticsearch and Ansible on a daily basis to enhance all aspects of the system.</li>
+            </ul>
+          </article>
+
+          <article class="cv-item">
+            <div class="cv-item__top">
+              <h3 class="cv-item__role">English Teacher · CCAA</h3>
+              <p class="cv-item__meta">Aug 2015 → Dec 2018</p>
+            </div>
+            <ul class="cv-bullets">
+              <li>Basic to advanced levels.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <div class="cv-grid-2">
+        <section class="cv-section" aria-labelledby="education">
+          <header class="cv-section__header">
+            <h2 class="cv-section__title" id="education">Education</h2>
+            <p class="cv-section__hint">formal + projects</p>
+          </header>
+          <div class="cv-section__body">
+            <article class="cv-item">
+              <div class="cv-item__top">
+                <h3 class="cv-item__role">Bachelor of Information Systems</h3>
+                <p class="cv-item__meta">Feb 2018 → Sep 2022</p>
+              </div>
+              <p class="cv-item__meta" style="margin-top: 0.8rem;">Universidade Federal Rural do Rio de Janeiro (UFRRJ)</p>
+              <ul class="cv-bullets">
+                <li>Participated in two development projects that used ReactJS, React Native and Java Spring Boot.</li>
+                <li>Development of a Recommender System with Java as Thesis.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="cv-section" aria-labelledby="languages">
+          <header class="cv-section__header">
+            <h2 class="cv-section__title" id="languages">Languages</h2>
+            <p class="cv-section__hint">communication</p>
+          </header>
+          <div class="cv-section__body">
+            <div class="cv-chips" aria-label="Languages list">
+              <span class="cv-chip">English — Fluent</span>
+              <span class="cv-chip">Portuguese — Native</span>
+              <span class="cv-chip">Spanish — Intermediate</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="cv-section" aria-labelledby="skills">
+        <header class="cv-section__header">
+          <h2 class="cv-section__title" id="skills">Skills</h2>
+          <p class="cv-section__hint">stack summary</p>
+        </header>
+        <div class="cv-section__body">
+          <div class="cv-chips">
+            <span class="cv-chip">.NET C#</span>
+            <span class="cv-chip">ASP.NET MVC</span>
+            <span class="cv-chip">JavaScript</span>
+            <span class="cv-chip">TypeScript</span>
+            <span class="cv-chip">ReactJS</span>
+            <span class="cv-chip">React Native</span>
+            <span class="cv-chip">NodeJS</span>
+            <span class="cv-chip">Redux</span>
+            <span class="cv-chip">Python</span>
+            <span class="cv-chip">Java</span>
+            <span class="cv-chip">Spring Framework</span>
+            <span class="cv-chip">JUnit</span>
+            <span class="cv-chip">NextJs</span>
+            <span class="cv-chip">SQL</span>
+            <span class="cv-chip">PostgreSQL</span>
+            <span class="cv-chip">MySQL</span>
+            <span class="cv-chip">NoSQL</span>
+            <span class="cv-chip">CouchDB</span>
+            <span class="cv-chip">REST API</span>
+            <span class="cv-chip">AWS</span>
+            <span class="cv-chip">Docker</span>
+            <span class="cv-chip">Git</span>
+            <span class="cv-chip">Ansible</span>
+            <span class="cv-chip">Elastic Stack</span>
+            <span class="cv-chip">JSON</span>
+          </div>
+        </div>
+      </section>
+
+      <p class="cv-footer">
+        source: <code style="font-family: var(--mono);">assets/resume.pdf</code> · rendered as HTML
+      </p>
+    </div>
+  </main>
+
+  <script>
+    // keep years in sync with main page logic (simple year diff)
+    const xpStartDate = new Date('06/01/2021');
+    const years = new Date().getFullYear() - xpStartDate.getFullYear();
+    const val = `${years}+`;
+    const el = document.getElementById('xp-years');
+    if (el) el.textContent = val;
+  </script>
+</body>
+
+</html>
+
