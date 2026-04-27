@@ -138,9 +138,50 @@ a {
 }
 
 @media (max-width: 900px) {
+  /* Hero is flex: avoid narrow shrink-wrapped main column; let inner stack fill width. */
+  .pf-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .pf-hero > .pf-container {
+    min-width: 0;
+    max-width: 100%;
+  }
+
   .pf-hero__grid {
     grid-template-columns: 1fr;
+    justify-items: stretch;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .pf-hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
     text-align: center;
+  }
+
+  .pf-hero__welcome,
+  .pf-hero__title,
+  .pf-hero__lead {
+    text-align: center;
+  }
+
+  .pf-hero__lead {
+    max-width: min(46rem, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pf-hero__content > .pf-btn {
+    align-self: center;
   }
 
   .pf-hero__social {
@@ -150,6 +191,7 @@ a {
   .pf-hero__visual {
     order: -1;
     max-width: 32rem;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -360,6 +402,16 @@ a {
   font-weight: 300;
   line-height: 1.75;
   color: var(--text-muted);
+}
+
+.pf-about__cv {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .pf-meta-list {
